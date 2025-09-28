@@ -11,7 +11,7 @@ export default function YogaStudio() {
       name: "Single Class",
       classes: 1,
       price: 20,
-      description: "Perfect for trying out our classes",
+      description: "Perfect for experiencing breath-led Viniyoga",
       popular: false,
       priceId: process.env.NEXT_PUBLIC_STRIPE_SINGLE_CLASS_PRICE_ID,
     },
@@ -19,7 +19,7 @@ export default function YogaStudio() {
       name: "8 Class Package",
       classes: 8,
       price: 120,
-      description: "Best value for regular practice",
+      description: "Consistent practice for lasting back pain relief",
       popular: true,
       priceId: process.env.NEXT_PUBLIC_STRIPE_8_SINGLE_CLASSES_PRICE_ID,
     },
@@ -30,7 +30,7 @@ export default function YogaStudio() {
       name: "4 Group Classes",
       classes: 4,
       price: 50,
-      description: "Great for building community",
+      description: "Community-focused breath-centric practice",
       popular: false,
       priceId: process.env.NEXT_PUBLIC_STRIPE_4_GROUP_CLASSES_PRICE_ID,
     },
@@ -38,7 +38,7 @@ export default function YogaStudio() {
       name: "8 Group Classes",
       classes: 8,
       price: 75,
-      description: "Ideal for committed practitioners",
+      description: "Best value for regular group Viniyoga practice",
       popular: true,
       priceId: process.env.NEXT_PUBLIC_STRIPE_8_GROUP_CLASSES_PRICE_ID,
     },
@@ -76,8 +76,8 @@ export default function YogaStudio() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-primary">Serenity</h1>
-              <p className="text-sm text-muted-foreground">Yoga Studio</p>
+              <h1 className="text-3xl font-bold text-primary">Yoga With Sunita</h1>
+              <p className="text-sm text-muted-foreground">Newark, DE</p>
             </div>
             <nav className="hidden md:flex items-center gap-8">
               <a href="#classes" className="text-foreground hover:text-primary transition-colors">
@@ -97,13 +97,12 @@ export default function YogaStudio() {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center max-w-4xl">
-          <h2 className="text-5xl md:text-7xl font-bold text-primary mb-6 text-balance">Find Your Inner Peace</h2>
+          <h2 className="text-5xl md:text-7xl font-bold text-primary mb-6 text-balance">Breath-Led Viniyoga</h2>
           <p className="text-xl text-muted-foreground mb-8 text-pretty max-w-2xl mx-auto">
-            Join Sarah's nurturing yoga classes and discover the perfect balance of strength, flexibility, and
-            mindfulness in a welcoming environment.
+            Engage your breath and core for pain-free back relief. Perfect for desk workers dealing with back pain, stress, and anxiety through personalized Viniyoga approach.
           </p>
           <Button size="lg" className="text-lg px-8 py-6">
-            Start Your Journey
+            Book Your First Class
           </Button>
         </div>
       </section>
@@ -111,11 +110,9 @@ export default function YogaStudio() {
       {/* About Section */}
       <section id="about" className="py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <h3 className="text-3xl font-bold text-primary mb-6">Meet Sarah</h3>
+          <h3 className="text-3xl font-bold text-primary mb-6">Meet Sunita</h3>
           <p className="text-lg text-muted-foreground text-pretty">
-            With over 10 years of experience, Sarah brings a gentle yet empowering approach to yoga. Her classes focus
-            on building strength, improving flexibility, and cultivating inner peace through mindful movement and breath
-            work.
+            Certified yoga teacher with 500-hour training from KYM Chennai, plus specialized training in Vinyasa (My Vinyasa School), Pre/Postnatal, and Science of Stretching. Sunita specializes in gentle Viniyoga, Hatha Flow, and Mindful Vinyasa, helping women 35+ find relief from stress, anxiety, and back pain through breath-centered practice.
           </p>
         </div>
       </section>
@@ -126,8 +123,7 @@ export default function YogaStudio() {
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-primary mb-4">Class Packages</h3>
             <p className="text-lg text-muted-foreground text-pretty">
-              Choose the perfect package for your yoga journey. All classes are 30 minutes of focused practice designed
-              to fit into your busy schedule.
+              Choose the perfect package for your Viniyoga journey. All classes focus on breath-led movement, core strength, and back pain relief designed to fit into your busy schedule.
             </p>
           </div>
 
@@ -209,21 +205,71 @@ export default function YogaStudio() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <h3 className="text-3xl font-bold text-primary mb-12 text-center">What Students Say</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="p-6">
+              <p className="text-muted-foreground mb-4 italic">
+                "Sunita's breath-focused approach has completely transformed my back pain. I feel stronger and more centered."
+              </p>
+              <p className="font-semibold text-primary">— Chaitanya</p>
+            </Card>
+            <Card className="p-6">
+              <p className="text-muted-foreground mb-4 italic">
+                "The Viniyoga classes are perfect for my busy schedule. I've never felt more connected to my breath."
+              </p>
+              <p className="font-semibold text-primary">— Ami</p>
+            </Card>
+            <Card className="p-6">
+              <p className="text-muted-foreground mb-4 italic">
+                "As someone who sits at a desk all day, these classes have been a game-changer for my posture and stress levels."
+              </p>
+              <p className="font-semibold text-primary">— Karishma</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-card">
         <div className="container mx-auto max-w-4xl text-center">
           <h3 className="text-3xl font-bold text-primary mb-6">Ready to Begin?</h3>
           <p className="text-lg text-muted-foreground mb-8 text-pretty">
-            Take the first step towards a healthier, more balanced you. Contact Sarah to book your first class or ask
-            any questions.
+            Take the first step towards pain-free movement and stress relief. Contact Sunita to book your first class or ask any questions.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center mb-8">
             <Button size="lg" className="text-lg px-8">
               Book Your First Class
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
-              Ask Questions
-            </Button>
+          </div>
+          <div className="text-muted-foreground space-y-2 mb-6">
+            <p>📧 hello@yogasunita.com</p>
+            <p>📞 +1 302-384-1791</p>
+            <p>📍 Newark, DE, USA</p>
+          </div>
+          <div className="flex justify-center gap-4">
+            <a
+              href="https://wa.me/13023841791"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 transition-colors"
+            >
+              <Button variant="outline" size="sm">
+                💬 WhatsApp
+              </Button>
+            </a>
+            <a
+              href="https://www.instagram.com/yogawithsunita/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 transition-colors"
+            >
+              <Button variant="outline" size="sm">
+                📸 Instagram
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -232,10 +278,10 @@ export default function YogaStudio() {
       <footer className="border-t border-border/50 py-12 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center">
-            <h4 className="text-2xl font-bold text-primary mb-4">Serenity Yoga Studio</h4>
-            <p className="text-muted-foreground mb-6">Nurturing mind, body, and spirit through the practice of yoga</p>
+            <h4 className="text-2xl font-bold text-primary mb-4">Yoga With Sunita</h4>
+            <p className="text-muted-foreground mb-6">Breath-led Viniyoga for core strength, back pain relief, and inner peace</p>
             <Separator className="my-6" />
-            <p className="text-sm text-muted-foreground">© 2025 Serenity Yoga Studio. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">© 2025 Yoga With Sunita. All rights reserved.</p>
           </div>
         </div>
       </footer>
