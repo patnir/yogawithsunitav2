@@ -207,27 +207,45 @@ export default function YogaStudio() {
 
       {/* Testimonials Section */}
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-6xl">
           <h3 className="text-3xl font-bold text-primary mb-12 text-center">What Students Say</h3>
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="p-6">
-              <p className="text-muted-foreground mb-4 italic">
-                "Sunita's breath-focused approach has completely transformed my back pain. I feel stronger and more centered."
-              </p>
-              <p className="font-semibold text-primary">— Chaitanya</p>
-            </Card>
-            <Card className="p-6">
-              <p className="text-muted-foreground mb-4 italic">
-                "The Viniyoga classes are perfect for my busy schedule. I've never felt more connected to my breath."
-              </p>
-              <p className="font-semibold text-primary">— Ami</p>
-            </Card>
-            <Card className="p-6">
-              <p className="text-muted-foreground mb-4 italic">
-                "As someone who sits at a desk all day, these classes have been a game-changer for my posture and stress levels."
-              </p>
-              <p className="font-semibold text-primary">— Karishma</p>
-            </Card>
+            <div className="flex justify-center">
+              <video
+                className="w-full max-w-sm rounded-lg shadow-lg"
+                controls
+                preload="metadata"
+                style={{ aspectRatio: '9/16' }}
+              >
+                <source src="/1.mov" type="video/mp4" />
+                <source src="/1.mov" type="video/quicktime" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="flex justify-center">
+              <video
+                className="w-full max-w-sm rounded-lg shadow-lg"
+                controls
+                preload="metadata"
+                style={{ aspectRatio: '9/16' }}
+              >
+                <source src="/2.mov" type="video/mp4" />
+                <source src="/2.mov" type="video/quicktime" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="flex justify-center">
+              <video
+                className="w-full max-w-sm rounded-lg shadow-lg"
+                controls
+                preload="metadata"
+                style={{ aspectRatio: '9/16' }}
+              >
+                <source src="/3.mov" type="video/mp4" />
+                <source src="/3.mov" type="video/quicktime" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </section>
