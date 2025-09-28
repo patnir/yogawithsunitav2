@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     siteName: "Yoga With Sunita",
     images: [
       {
-        url: "/pfp.png",
+        url: "/yoga.jpg",
         width: 1200,
         height: 630,
-        alt: "Yoga With Sunita",
+        alt: "Sunita practicing breath-led Viniyoga in a peaceful outdoor setting",
       },
     ],
     locale: "en_US",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yoga With Sunita - Breath-Led Viniyoga",
     description: "Pain-free back relief through personalized Viniyoga approach",
-    images: ["/pfp.png"],
+    images: ["/yoga.jpg"],
   },
 }
 
