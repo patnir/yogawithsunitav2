@@ -7,11 +7,16 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Yoga With Sunita - Breath-Led Viniyoga for Core Strength",
+  title: "Back Pain Relief Through Yoga | Yoga With Sunita | Newark, DE",
   description:
-    "Engage your breath and core for pain-free back relief. Perfect for desk workers dealing with back pain, stress, and anxiety through personalized Viniyoga approach in Newark, DE.",
+    "Relieve chronic back pain naturally with breath-led Viniyoga. Online classes for desk workers, lower back pain, sciatica relief. Certified instructor in Newark, DE. Book your healing session today.",
   generator: "v0.app",
-  keywords: ["yoga", "viniyoga", "back pain relief", "stress relief", "Newark DE", "breath-led yoga", "core strength"],
+  keywords: [
+    "back pain relief yoga", "chronic back pain", "lower back pain yoga", "sciatica relief",
+    "desk job back pain", "yoga for back pain", "viniyoga back pain", "online yoga back pain",
+    "back pain Newark DE", "core strengthening yoga", "posture correction yoga",
+    "herniated disc yoga", "spinal alignment yoga", "therapeutic yoga", "pain management yoga"
+  ],
   authors: [{ name: "Sunita" }],
   creator: "Yoga With Sunita",
   icons: {
@@ -20,8 +25,8 @@ export const metadata: Metadata = {
     apple: "/pfp.png",
   },
   openGraph: {
-    title: "Yoga With Sunita - Breath-Led Viniyoga",
-    description: "Pain-free back relief through personalized Viniyoga approach in Newark, DE",
+    title: "Back Pain Relief Through Yoga | Yoga With Sunita",
+    description: "Relieve chronic back pain naturally with therapeutic Viniyoga. Online classes for desk workers, sciatica, lower back pain. Newark, DE certified instructor.",
     url: "https://yogawithsunita.com",
     siteName: "Yoga With Sunita",
     images: [
@@ -37,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yoga With Sunita - Breath-Led Viniyoga",
-    description: "Pain-free back relief through personalized Viniyoga approach",
+    title: "Back Pain Relief Through Yoga | Yoga With Sunita",
+    description: "Relieve chronic back pain naturally with therapeutic Viniyoga. Online classes for desk workers & sciatica relief.",
     images: ["/yoga.jpg"],
   },
 }
