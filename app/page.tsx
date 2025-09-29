@@ -177,8 +177,9 @@ export default function YogaStudio() {
               <video
                 className="w-full max-w-sm rounded-lg shadow-lg bg-gray-100"
                 controls
-                preload="auto"
+                preload="metadata"
                 playsInline
+                poster="/poster1.jpg"
                 style={{ aspectRatio: '9/16' }}
               >
                 <source src="/1.mov" type="video/mp4" />
@@ -190,8 +191,9 @@ export default function YogaStudio() {
               <video
                 className="w-full max-w-sm rounded-lg shadow-lg bg-gray-100"
                 controls
-                preload="auto"
+                preload="metadata"
                 playsInline
+                poster="/poster2.jpg"
                 style={{ aspectRatio: '9/16' }}
               >
                 <source src="/2.mov" type="video/mp4" />
@@ -203,8 +205,9 @@ export default function YogaStudio() {
               <video
                 className="w-full max-w-sm rounded-lg shadow-lg bg-gray-100"
                 controls
-                preload="auto"
+                preload="metadata"
                 playsInline
+                poster="/poster3.jpg"
                 style={{ aspectRatio: '9/16' }}
               >
                 <source src="/3.mov" type="video/mp4" />
