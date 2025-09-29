@@ -8,22 +8,22 @@ import { Separator } from "@/components/ui/separator"
 export default function YogaStudio() {
   const healingPrograms = [
     {
-      name: "Relief from Sitting All Day",
+      name: "1 Private Session",
       sessions: "30-minute 1:1",
       description: "Personalized session to counteract hours of sitting and find instant calm",
       popular: false,
       paymentUrl: "https://book.stripe.com/3cIdRb5Sc0r07Y3gJr7IY01",
     },
     {
-      name: "8-Week Mind & Body Reset",
-      sessions: "8× 30-minute 1:1",
+      name: "8 Private Sessions",
+      sessions: "8×30-minute 1:1",
       description: "Complete transformation for busy professionals - heal your back, calm your mind",
       popular: true,
       paymentUrl: "https://book.stripe.com/8x25kFdkEa1Aa6bctb7IY02",
     },
     {
-      name: "8-Week Group Mindful Movement",
-      sessions: "8× small group (max 3)",
+      name: "8 Group Sessions",
+      sessions: "8×30 minute group sessions",
       description: "Connect with others while finding relief from modern life's stresses",
       popular: false,
       paymentUrl: "https://buy.stripe.com/00w7sNcgAehQa6b0Kt7IY03",
