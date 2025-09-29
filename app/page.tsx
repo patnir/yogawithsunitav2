@@ -175,9 +175,10 @@ export default function YogaStudio() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="flex justify-center">
               <video
-                className="w-full max-w-sm rounded-lg shadow-lg"
+                className="w-full max-w-sm rounded-lg shadow-lg bg-gray-100"
                 controls
-                preload="metadata"
+                preload="auto"
+                playsInline
                 style={{ aspectRatio: '9/16' }}
               >
                 <source src="/1.mov" type="video/mp4" />
@@ -187,9 +188,10 @@ export default function YogaStudio() {
             </div>
             <div className="flex justify-center">
               <video
-                className="w-full max-w-sm rounded-lg shadow-lg"
+                className="w-full max-w-sm rounded-lg shadow-lg bg-gray-100"
                 controls
-                preload="metadata"
+                preload="auto"
+                playsInline
                 style={{ aspectRatio: '9/16' }}
               >
                 <source src="/2.mov" type="video/mp4" />
@@ -199,9 +201,10 @@ export default function YogaStudio() {
             </div>
             <div className="flex justify-center">
               <video
-                className="w-full max-w-sm rounded-lg shadow-lg"
+                className="w-full max-w-sm rounded-lg shadow-lg bg-gray-100"
                 controls
-                preload="metadata"
+                preload="auto"
+                playsInline
                 style={{ aspectRatio: '9/16' }}
               >
                 <source src="/3.mov" type="video/mp4" />
