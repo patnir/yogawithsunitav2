@@ -7,15 +7,15 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Back Pain Relief Through Yoga | Yoga With Sunita | Newark, DE",
+  title: "Back Pain from Sitting All Day? Find Relief & Mindfulness | Yoga With Sunita",
   description:
-    "Relieve chronic back pain naturally with breath-led Viniyoga. Online classes for desk workers, lower back pain, sciatica relief. Certified instructor in Newark, DE. Book your healing session today.",
+    "Heal back pain from sitting all day and find calm in a busy world. Therapeutic Viniyoga for office workers, remote professionals, and overwhelmed minds. Online sessions from Newark, DE.",
   generator: "v0.app",
   keywords: [
-    "back pain relief yoga", "chronic back pain", "lower back pain yoga", "sciatica relief",
-    "desk job back pain", "yoga for back pain", "viniyoga back pain", "online yoga back pain",
-    "back pain Newark DE", "core strengthening yoga", "posture correction yoga",
-    "herniated disc yoga", "spinal alignment yoga", "therapeutic yoga", "pain management yoga"
+    "back pain from sitting all day", "office worker back pain", "remote work back pain", "sitting too long back pain",
+    "mindfulness for busy people", "stress relief busy professionals", "yoga for overwhelmed minds",
+    "desk posture pain", "computer work back pain", "work from home back pain", "sitting posture yoga",
+    "mindful movement busy life", "therapeutic yoga office workers", "calm mind busy world", "Newark DE yoga"
   ],
   authors: [{ name: "Sunita" }],
   creator: "Yoga With Sunita",
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     apple: "/pfp.png",
   },
   openGraph: {
-    title: "Back Pain Relief Through Yoga | Yoga With Sunita",
-    description: "Relieve chronic back pain naturally with therapeutic Viniyoga. Online classes for desk workers, sciatica, lower back pain. Newark, DE certified instructor.",
+    title: "Back Pain from Sitting All Day? Find Relief & Mindfulness",
+    description: "Heal back pain from sitting all day and find calm in a busy world. Therapeutic Viniyoga for office workers and overwhelmed minds.",
     url: "https://yogawithsunita.com",
     siteName: "Yoga With Sunita",
     images: [
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Back Pain Relief Through Yoga | Yoga With Sunita",
-    description: "Relieve chronic back pain naturally with therapeutic Viniyoga. Online classes for desk workers & sciatica relief.",
+    title: "Back Pain from Sitting All Day? Find Relief & Mindfulness",
+    description: "Heal back pain from sitting all day and find calm in a busy world. Therapeutic Viniyoga for office workers.",
     images: ["/yoga.jpg"],
   },
 }

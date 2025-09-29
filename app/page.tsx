@@ -8,23 +8,23 @@ import { Separator } from "@/components/ui/separator"
 export default function YogaStudio() {
   const healingPrograms = [
     {
-      name: "Private Back Pain Relief Session",
+      name: "Relief from Sitting All Day",
       sessions: "30-minute 1:1",
-      description: "Personalized therapeutic Viniyoga for immediate back pain relief",
+      description: "Personalized session to counteract hours of sitting and find instant calm",
       popular: false,
       paymentUrl: "https://book.stripe.com/3cIdRb5Sc0r07Y3gJr7IY01",
     },
     {
-      name: "8-Session Private Recovery Program",
+      name: "8-Week Mind & Body Reset",
       sessions: "8× 30-minute 1:1",
-      description: "Comprehensive healing program for chronic back pain and sciatica",
+      description: "Complete transformation for busy professionals - heal your back, calm your mind",
       popular: true,
       paymentUrl: "https://book.stripe.com/8x25kFdkEa1Aa6bctb7IY02",
     },
     {
-      name: "8-Session Group Healing Program",
+      name: "8-Week Group Mindful Movement",
       sessions: "8× small group (max 3)",
-      description: "Join others on the journey to back pain recovery via Zoom",
+      description: "Connect with others while finding relief from modern life's stresses",
       popular: false,
       paymentUrl: "https://buy.stripe.com/00w7sNcgAehQa6b0Kt7IY03",
     },
@@ -65,11 +65,15 @@ export default function YogaStudio() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6 text-balance">Natural Back Pain Relief Through Yoga</h1>
+              <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6 text-balance">Sitting All Day? Find Relief & Calm</h1>
               <p className="text-xl text-muted-foreground mb-8 text-pretty">
-                Heal chronic back pain, sciatica, and desk job discomfort with therapeutic Viniyoga. Our breath-led approach strengthens your core, improves posture, and provides lasting pain relief - all from your home.
+                Heal back pain from endless sitting and find mindfulness in your busy world. Therapeutic Viniyoga designed for office workers, remote professionals, and overwhelmed minds - all from your home.
               </p>
-              <Button size="lg" className="text-lg px-8 py-6">
+              <Button
+                size="lg"
+                className="text-lg px-8 py-6"
+                onClick={() => handleBooking("https://book.stripe.com/3cIdRb5Sc0r07Y3gJr7IY01")}
+              >
                 Start Your Healing Journey
               </Button>
             </div>
@@ -93,22 +97,22 @@ export default function YogaStudio() {
       {/* About Section */}
       <section id="about" className="py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-primary mb-6">Therapeutic Yoga for Back Pain Recovery</h2>
+          <h2 className="text-3xl font-bold text-primary mb-6">Healing for Modern Life's Challenges</h2>
           <p className="text-lg text-muted-foreground text-pretty mb-6">
-            Certified therapeutic yoga instructor with 500-hour training from KYM Chennai, specializing in back pain relief and spinal health. With expertise in Viniyoga, Science of Stretching, and corrective movement, Sunita has helped hundreds of desk workers, chronic pain sufferers, and sciatica patients find lasting relief through targeted breath-work and core strengthening.
+            Certified therapeutic yoga instructor with 500-hour training from KYM Chennai, specializing in the unique challenges of modern work life. With expertise in Viniyoga, Science of Stretching, and mindful movement, Sunita helps busy professionals, remote workers, and overwhelmed minds find both physical relief and mental clarity through breath-centered practice.
           </p>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             <div className="text-center">
-              <h3 className="font-semibold text-primary mb-2">Chronic Back Pain</h3>
-              <p className="text-sm text-muted-foreground">Gentle movements to reduce inflammation and muscle tension</p>
+              <h3 className="font-semibold text-primary mb-2">Sitting All Day Pain</h3>
+              <p className="text-sm text-muted-foreground">Counteract hours of sitting with targeted spinal mobility</p>
             </div>
             <div className="text-center">
-              <h3 className="font-semibold text-primary mb-2">Sciatica Relief</h3>
-              <p className="text-sm text-muted-foreground">Targeted stretches to decompress the sciatic nerve</p>
+              <h3 className="font-semibold text-primary mb-2">Busy Mind Relief</h3>
+              <p className="text-sm text-muted-foreground">Find calm and focus through mindful breath-work</p>
             </div>
             <div className="text-center">
-              <h3 className="font-semibold text-primary mb-2">Desk Job Recovery</h3>
-              <p className="text-sm text-muted-foreground">Posture correction and core strengthening for office workers</p>
+              <h3 className="font-semibold text-primary mb-2">Work-Life Balance</h3>
+              <p className="text-sm text-muted-foreground">Create healthy boundaries between work stress and personal peace</p>
             </div>
           </div>
         </div>
@@ -118,9 +122,9 @@ export default function YogaStudio() {
       <section id="classes" className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Back Pain Relief Programs</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">Programs for Modern Life</h2>
             <p className="text-lg text-muted-foreground text-pretty mb-4">
-              Choose your healing path. All therapeutic sessions focus on spinal health, core strengthening, and lasting pain relief designed for your recovery schedule.
+              Choose your path to wellness. All sessions address the physical and mental challenges of sitting all day and living in a busy, distracted world.
             </p>
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full">
               <span>💻</span>
