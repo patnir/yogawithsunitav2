@@ -236,7 +236,7 @@ export default function YogaStudio() {
             </Button>
           </div>
           <div className="text-muted-foreground space-y-2 mb-6">
-            <p>📞 +1 302-384-1791</p>
+            <p>📞 <a href="sms:+13023841791" className="text-primary hover:text-primary/80 transition-colors">+1 302-384-1791</a></p>
             <p>📍 Newark, DE, USA</p>
           </div>
           <div className="flex justify-center gap-4">
