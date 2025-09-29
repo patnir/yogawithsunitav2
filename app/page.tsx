@@ -6,67 +6,32 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Separator } from "@/components/ui/separator"
 
 export default function YogaStudio() {
-  const singleClasses = [
+  const healingPrograms = [
     {
-      name: "Back Pain Relief Session",
-      classes: 1,
-      price: 20,
-      description: "Try therapeutic Viniyoga for immediate back pain relief",
+      name: "Private Back Pain Relief Session",
+      sessions: "30-minute 1:1",
+      description: "Personalized therapeutic Viniyoga for immediate back pain relief",
       popular: false,
-      priceId: process.env.NEXT_PUBLIC_STRIPE_SINGLE_CLASS_PRICE_ID,
+      paymentUrl: "https://book.stripe.com/3cIdRb5Sc0r07Y3gJr7IY01",
     },
     {
-      name: "8-Week Pain Recovery Program",
-      classes: 8,
-      price: 120,
+      name: "8-Session Private Recovery Program",
+      sessions: "8× 30-minute 1:1",
       description: "Comprehensive healing program for chronic back pain and sciatica",
       popular: true,
-      priceId: process.env.NEXT_PUBLIC_STRIPE_8_SINGLE_CLASSES_PRICE_ID,
+      paymentUrl: "https://book.stripe.com/8x25kFdkEa1Aa6bctb7IY02",
     },
-  ]
-
-  const groupClasses = [
     {
-      name: "4-Week Group Healing",
-      classes: 4,
-      price: 50,
+      name: "8-Session Group Healing Program",
+      sessions: "8× small group (max 3)",
       description: "Join others on the journey to back pain recovery via Zoom",
       popular: false,
-      priceId: process.env.NEXT_PUBLIC_STRIPE_4_GROUP_CLASSES_PRICE_ID,
-    },
-    {
-      name: "8-Week Group Recovery",
-      classes: 8,
-      price: 75,
-      description: "Complete group program for lasting back pain relief online",
-      popular: true,
-      priceId: process.env.NEXT_PUBLIC_STRIPE_8_GROUP_CLASSES_PRICE_ID,
+      paymentUrl: "https://buy.stripe.com/00w7sNcgAehQa6b0Kt7IY03",
     },
   ]
 
-  const handleCheckout = async (priceId: string | undefined) => {
-    if (!priceId) {
-      console.error('Price ID not found')
-      return
-    }
-
-    try {
-      const response = await fetch('/api/create-checkout-session', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ priceId }),
-      })
-
-      const { url } = await response.json()
-
-      if (url) {
-        window.location.href = url
-      }
-    } catch (error) {
-      console.error('Error:', error)
-    }
+  const handleBooking = (paymentUrl: string) => {
+    window.open(paymentUrl, '_blank')
   }
 
   return (
@@ -163,73 +128,31 @@ export default function YogaStudio() {
             </div>
           </div>
 
-          {/* Individual Sessions */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-primary mb-8 text-center">Individual Therapy Sessions</h3>
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {singleClasses.map((pkg, index) => (
-                <Card key={index} className={`relative ${pkg.popular ? "ring-2 ring-primary" : ""}`}>
-                  {pkg.popular && (
-                    <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground">
-                      Most Popular
-                    </Badge>
-                  )}
-                  <CardHeader className="text-center pb-4">
-                    <CardTitle className="text-xl text-primary">{pkg.name}</CardTitle>
-                    <CardDescription className="text-sm">{pkg.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="text-center">
-                    <div className="mb-4">
-                      <span className="text-4xl font-bold text-primary">${pkg.price}</span>
-                    </div>
-                    <div className="mb-6">
-                      <p className="text-muted-foreground">
-                        {pkg.classes} {pkg.classes === 1 ? "class" : "classes"}
-                      </p>
-                      <p className="text-sm text-muted-foreground">${(pkg.price / pkg.classes).toFixed(2)} per class</p>
-                    </div>
-                    <Button
-                      className="w-full"
-                      variant={pkg.popular ? "default" : "outline"}
-                      onClick={() => handleCheckout(pkg.priceId)}
-                    >
-                      Book Now
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-
-          {/* Group Healing Sessions */}
+          {/* Healing Programs */}
           <div>
-            <h3 className="text-2xl font-bold text-primary mb-8 text-center">Group Healing Sessions</h3>
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {groupClasses.map((pkg, index) => (
-                <Card key={index} className={`relative ${pkg.popular ? "ring-2 ring-primary" : ""}`}>
-                  {pkg.popular && (
+            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {healingPrograms.map((program, index) => (
+                <Card key={index} className={`relative ${program.popular ? "ring-2 ring-primary" : ""}`}>
+                  {program.popular && (
                     <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground">
                       Most Popular
                     </Badge>
                   )}
                   <CardHeader className="text-center pb-4">
-                    <CardTitle className="text-xl text-primary">{pkg.name}</CardTitle>
-                    <CardDescription className="text-sm">{pkg.description}</CardDescription>
+                    <CardTitle className="text-xl text-primary">{program.name}</CardTitle>
+                    <CardDescription className="text-sm">{program.description}</CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
-                    <div className="mb-4">
-                      <span className="text-4xl font-bold text-primary">${pkg.price}</span>
-                    </div>
                     <div className="mb-6">
-                      <p className="text-muted-foreground">
-                        {pkg.classes} {pkg.classes === 1 ? "class" : "classes"}
+                      <p className="text-lg font-semibold text-muted-foreground">
+                        {program.sessions}
                       </p>
-                      <p className="text-sm text-muted-foreground">${(pkg.price / pkg.classes).toFixed(2)} per class</p>
+                      <p className="text-sm text-muted-foreground mt-2">30-minute therapeutic sessions</p>
                     </div>
                     <Button
                       className="w-full"
-                      variant={pkg.popular ? "default" : "outline"}
-                      onClick={() => handleCheckout(pkg.priceId)}
+                      variant={program.popular ? "default" : "outline"}
+                      onClick={() => handleBooking(program.paymentUrl)}
                     >
                       Book Now
                     </Button>
