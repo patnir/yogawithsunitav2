@@ -221,7 +221,11 @@ export default function YogaStudio() {
             Take the first step towards pain-free movement and stress relief. Contact Sunita to book your first class or ask any questions.
           </p>
           <div className="flex justify-center mb-8">
-            <Button size="lg" className="text-lg px-8">
+            <Button
+              size="lg"
+              className="text-lg px-8"
+              onClick={() => handleBooking("https://book.stripe.com/3cIdRb5Sc0r07Y3gJr7IY01")}
+            >
               Book Your First Class
             </Button>
           </div>
