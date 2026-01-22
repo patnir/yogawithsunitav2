@@ -36,22 +36,31 @@ export default function YogaStudio() {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Sticky Banner */}
+      <div className="bg-primary text-primary-foreground py-2 px-4 text-center">
+        <a
+          href="https://learn.yogawithsunita.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm md:text-base font-medium hover:underline"
+        >
+          FREE: Get the 5-Step Roadmap to Pain-Free Back in 10 Minutes a Day →
+        </a>
+      </div>
+
       {/* Header */}
       <header className="border-b border-border/50">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-3xl font-bold text-primary">Yoga With Sunita</h1>
-              <p className="text-sm text-muted-foreground">Newark, DE</p>
-            </div>
-            <nav className="hidden md:flex items-center gap-8">
-              <a href="#classes" className="text-foreground hover:text-primary transition-colors">
+            <h1 className="text-2xl md:text-3xl font-bold text-primary">Yoga With Sunita</h1>
+            <nav className="flex items-center gap-4 md:gap-8">
+              <a href="#classes" className="text-sm md:text-base text-foreground hover:text-primary transition-colors">
                 Classes
               </a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors">
+              <a href="#about" className="text-sm md:text-base text-foreground hover:text-primary transition-colors">
                 About
               </a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors">
+              <a href="#contact" className="text-sm md:text-base text-foreground hover:text-primary transition-colors">
                 Contact
               </a>
             </nav>
@@ -95,7 +104,7 @@ export default function YogaStudio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4">
+      <section id="about" className="py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-primary mb-6">Healing for Modern Life's Challenges</h2>
           <p className="text-lg text-muted-foreground text-pretty mb-6">
@@ -169,7 +178,7 @@ export default function YogaStudio() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-6xl">
           <h3 className="text-3xl font-bold text-primary mb-12 text-center">What Students Say</h3>
           <div className="grid md:grid-cols-3 gap-6">
@@ -237,7 +246,6 @@ export default function YogaStudio() {
           </div>
           <div className="text-muted-foreground space-y-2 mb-6">
             <p>📞 <a href="sms:+13023841791?body=Hi%20Sunita%2C%20I%27m%20interested%20in%20your%20yoga%20classes." className="text-primary hover:text-primary/80 transition-colors">+1 302-384-1791</a></p>
-            <p>📍 Newark, DE, USA</p>
           </div>
           <div className="flex justify-center gap-4">
             <a
